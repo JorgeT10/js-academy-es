@@ -1,8 +1,8 @@
-addEventListener('click', function (e) {
-    const showPass = document.getElementById("show-password");
-    let password = document.getElementById("password");
+const showPassword = document.getElementById("show-password");
+let password = document.getElementById("password");
 
-    if (showPass.checked) {
+showPassword.addEventListener('click', function (e) {
+    if (showPassword.checked) {
         password.type = "text";
     } else {
         password.type = "password";
